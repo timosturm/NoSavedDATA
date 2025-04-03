@@ -5,7 +5,7 @@ from torch import nn
 from .memory import DNC_Memory
 from ..cfc import *
 
-eps=torch.tensor(1e-6,device='cuda')
+eps=torch.tensor(1e-6,device='cpu')
 
 def oneplus(X):
     #return 1/(1+torch.exp(X))
